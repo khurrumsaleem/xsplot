@@ -1,7 +1,7 @@
 
 # Instructions for google cloud run
 
-docker build -t gcr.io/xsplot/gui:latest . --no-cache
+docker build -t gcr.io/xsplot/gui:latest --build-arg CACHEBUST=$(date +%s) .
 
 # test it locally with 
 
